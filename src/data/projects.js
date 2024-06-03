@@ -38,6 +38,18 @@ const projects = [
 		category: 'Web Application',
 		img: require('@/assets/images/web-project-1.jpg'),
 	},
+	{
+		id: 7,
+		title: 'Apple Design System',
+		category: 'Web Application',
+		img: require('@/assets/images/web-project-1.jpg'),
+	},
+	{
+		id: 8,
+		title: 'Apple Design System',
+		category: 'Web Application',
+		img: require('@/assets/images/web-project-1.jpg'),
+	},
 ];
 
 export default projects;
