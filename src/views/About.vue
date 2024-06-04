@@ -1,13 +1,13 @@
 <script>
 import AboutMe from "@/components/about/AboutMe";
-import AboutCounter from "@/components/about/AboutCounter";
+import Tech from "@/components/about/Tech";
 import feather from "feather-icons";
 
 export default {
   name: "About",
   components: {
     AboutMe,
-    AboutCounter,
+    Tech,
   },
   data: () => {
     return {};
@@ -29,8 +29,8 @@ export default {
       <AboutMe />
     </div>
 
-    <!-- About counter -->
-    <AboutCounter />
+    <!-- About Client -->
+    <Tech />
   </div>
 </template>
 
