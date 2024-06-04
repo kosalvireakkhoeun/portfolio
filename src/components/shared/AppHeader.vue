@@ -1,16 +1,12 @@
 <script>
 import ThemeSwitcher from "../ThemeSwitcher";
-import HireMeModal from "../HireMeModal.vue";
 import feather from "feather-icons";
 import AppHeaderLinks from "./AppHeaderLinks.vue";
-import Button from "../reusable/Button.vue";
 
 export default {
   components: {
     ThemeSwitcher,
-    HireMeModal,
     AppHeaderLinks,
-    Button,
   },
   data() {
     return {
@@ -88,7 +84,7 @@ export default {
             ><h3
               class="font-general-semibold text-xl md:text-2xl xl:text-3xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
             >
-              Kosalvireak
+              Vireak
             </h3>
           </router-link>
         </div>
@@ -136,16 +132,6 @@ export default {
       <div
         class="hidden sm:flex justify-between items-center flex-col md:flex-row"
       >
-        <!-- Hire me button -->
-        <div class="hidden md:block">
-          <Button
-            title="Hire Me"
-            class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
-            @click="showModal()"
-            aria-label="Hire Me Button"
-          />
-        </div>
-
         <!-- Theme switcher large screen -->
         <theme-switcher
           :theme="theme"
