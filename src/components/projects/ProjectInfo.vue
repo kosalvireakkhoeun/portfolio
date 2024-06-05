@@ -51,7 +51,7 @@ export default {
       <p
         class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7"
       >
-        Challenge
+        Description
       </p>
       <p
         v-for="projectDetail in projectInfo.projectDetails"

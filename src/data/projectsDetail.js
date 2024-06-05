@@ -25,7 +25,7 @@ export const projectsDetail = [
         ],
         projectInfo: {
           objectivesDetails:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+            "Seavphov is a helpful app that works like a donation platform for books. People can list their old books on Seavphov, so that others can easily see what's available and borrow those books for free.",
           technologies: [
             {
               techs: [
@@ -33,6 +33,7 @@ export const projectsDetail = [
                 "CSS",
                 "JavaScript",
                 "Bootstrap",
+                "Vuex",
                 "Vue.js",
                 "Laravel",
                 "MySQL",
