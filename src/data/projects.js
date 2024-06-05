@@ -4,15 +4,15 @@
 const projects = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
+		title: 'Seavphov',
 		category: 'Web Application',
-		img: require('@/assets/images/web-project-2.jpg'),
+		img: require('@/assets/images/projects/seavphov.png'),
 	},
 	{
 		id: 2,
-		title: 'Phoenix Digital Agency',
-		category: 'Mobile Application',
-		img: require('@/assets/images/mobile-project-2.jpg'),
+		title: 'Plot Graph',
+		category: 'Web Application',
+		img: require('@/assets/images/projects/bi1.png'),
 	},
 	{
 		id: 3,

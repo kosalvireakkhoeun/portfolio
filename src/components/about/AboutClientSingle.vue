@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center py-5">
+  <div class="flex flex-col items-center justify-center py-5 hover-effect">
     <a :href="client.url" target="_blank">
       <img
         :src="client.img"
@@ -14,11 +14,15 @@ export default {
       />
     </a>
     <p
-      class="font-general-medium text-lg sm:text-xl text-center sm:text-left leading-none text-gray-400"
+      class="font-general-medium text-lg sm:text-xl text-center sm:text-left leading-none text-primary-dark dark:text-primary-light"
     >
       {{ client.title }}
     </p>
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.hover-effect:hover p {
+  text-decoration: underline;
+}
+</style>

@@ -1,24 +1,26 @@
 export const projectsDetail = [
       {
         singleProjectHeader: {
-          singleProjectTitle: "Project Management UI1111",
-          singleProjectDate: "Jul 26, 2021",
+          singleProjectTitle: "Seavphov",
+          singleProjectDate: "Jul, 2024",
+          github: true,
+          url: "https://github.com/kosalvireak/WCT-Project",
         },
         projectImages: [
           {
             id: 1,
-            title: "Kabul Project Management UI",
-            img: require("@/assets/images/ui-project-1.jpg"),
+            title: "Seavphov",
+            img: require("@/assets/images/projects/seavphov.png"),
           },
           {
             id: 2,
-            title: "Kabul Project Management UI",
-            img: require("@/assets/images/web-project-2.jpg"),
+            title: "Seavphov",
+            img: require("@/assets/images/projects/seavphov1.png"),
           },
           {
             id: 3,
-            title: "Kabul Project Management UI",
-            img: require("@/assets/images/mobile-project-2.jpg"),
+            title: "Seavphov",
+            img: require("@/assets/images/projects/seavphov2.png"),
           },
         ],
         projectInfo: {
@@ -30,9 +32,11 @@ export const projectsDetail = [
                 "HTML",
                 "CSS",
                 "JavaScript",
+                "Bootstrap",
                 "Vue.js",
-                "TailwindCSS",
-                "AdobeXD",
+                "Laravel",
+                "MySQL",
+                "Mailtrap",
               ],
             },
           ],
@@ -87,38 +91,41 @@ export const projectsDetail = [
       },
       {
         singleProjectHeader: {
-          singleProjectTitle: "Project Management UI2222",
-          singleProjectDate: "Jul 26, 2021",
+          singleProjectTitle: "Plot Graph",
+          singleProjectDate: "Nov, 2023",
+          github: true,
+          url: "https://github.com/kosalvireak/Plot-Graph",
         },
         projectImages: [
           {
             id: 1,
-            title: "Kabul Project Management UI",
-            img: require("@/assets/images/ui-project-1.jpg"),
+            title: "Plot Graph",
+            img: require("@/assets/images/projects/bi.png"),
           },
           {
             id: 2,
-            title: "Kabul Project Management UI",
-            img: require("@/assets/images/web-project-2.jpg"),
+            title: "Plot Graph",
+            img: require("@/assets/images/projects/bi1.png"),
           },
           {
             id: 3,
-            title: "Kabul Project Management UI",
-            img: require("@/assets/images/mobile-project-2.jpg"),
+            title: "Plot Graph",
+            img: require("@/assets/images/projects/bi.png"),
           },
         ],
         projectInfo: {
           objectivesDetails:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+            "This application enables users to visualize their data through interactive charts. Users can upload existing data files or manually enter data points. The application then generates various chart types, including line, bar, and pie charts, to reveal trends and patterns within the data.",
           technologies: [
             {
               techs: [
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "Vue.js",
                 "TailwindCSS",
-                "AdobeXD",
+                "Vue.js",
+                "Node",
+                "MongoDB",
               ],
             },
           ],
