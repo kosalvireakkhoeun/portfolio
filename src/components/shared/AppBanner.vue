@@ -24,17 +24,18 @@ export default {
 
 <template>
   <section
-    class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10"
+    class="flex flex-col sm:justify-between justify-center items-center sm:flex-row mt-12 sm:mt-10"
+    style="height: 36rem"
   >
     <!-- Banner left contents -->
-    <div class="w-full md:w-1/3 text-left">
+    <div class="w-full md:w-1/2 text-left order-2 md:order-1 mt-12 md:mt-0">
       <h1
         class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
       >
         Hi, I'm Kosalvireak
       </h1>
       <p
-        class="font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl text-center sm:text-left leading-none text-gray-400"
+        class="font-general-medium mt-3 text-lg sm:text-xl xl:text-2xl text-center sm:text-left leading-none text-gray-400"
       >
         A Full-Stack Developer
       </p>
@@ -62,13 +63,12 @@ export default {
     </div>
 
     <!-- Banner right illustration -->
-    <div class="w-1/2 text-right float-right">
+    <div class="w-full md:w-1/2 text-right float-right order-1 p-5">
       <img
-        v-if="theme === 'light'"
-        src="@/assets/images/developer.svg"
+        src="@/assets/images/cover.jpg"
         alt="Developer"
+        class="rounded-xl w-auto h-auto"
       />
-      <img v-else src="@/assets/images/developer-dark.svg" alt="Developer" />
     </div>
   </section>
 </template>

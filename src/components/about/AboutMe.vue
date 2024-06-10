@@ -18,10 +18,12 @@ export default {
 </script>
 
 <template>
-  <div class="block sm:flex sm:gap-10 mt-10 sm:mt-20">
+  <div
+    class="block sm:flex sm:gap-10 mt-10 sm:mt-20 items-center h-auto md:h-96"
+  >
     <!-- About profile image -->
     <div
-      class="w-full sm:w-1/4 md:w-2/4 lg:w-1/4 mb-7 sm:mb-0 flex justify-center"
+      class="w-full sm:w-2/4 lg:w-1/4 mb-7 sm:mb-0 flex justify-center md:justify-start"
     >
       <img
         src="@/assets/images/profile.jpg"
@@ -31,7 +33,7 @@ export default {
     </div>
 
     <!-- About details -->
-    <div class="w-full sm:w-3/4 md:w-2/4 lg:w-3/4 text-left">
+    <div class="w-full sm:w-2/4 lg:w-3/4 text-left">
       <p
         v-for="bio in bios"
         :key="bio.id"
