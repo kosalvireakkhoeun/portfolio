@@ -1,8 +1,49 @@
 <script>
-import Button from "../reusable/Button.vue";
-import FormInput from "../reusable/FormInput.vue";
-import FormTextarea from "../reusable/FormTextarea.vue";
-export default { components: { Button, FormInput, FormTextarea } };
+import { getDatabase, ref, set, push } from "firebase/database";
+
+export default {
+  data() {
+    return {
+      name: "vi rak",
+      email: "virakvary@gmail.com",
+      subject: "virakvary@gmail.com",
+      message: "virakvary@gmail.com",
+      isSuccess: false,
+      isError: false,
+      error: "",
+    };
+  },
+  methods: {
+    async handleSubmit() {
+      this.isSuccess = false;
+      this.isError = false;
+      const contact = {
+        name: this.name,
+        email: this.email,
+        subject: this.subject,
+        message: this.message,
+      };
+      try {
+        const contactsRef = ref(getDatabase(), "contacts");
+        const newContactRef = push(contactsRef);
+
+        await set(newContactRef, contact);
+
+        this.isSuccess = true;
+        this.clearForm();
+      } catch (error) {
+        this.isError = true;
+        this.error = error.message;
+      }
+    },
+    clearForm() {
+      this.name = "";
+      this.email = "";
+      this.subject = "";
+      this.message = "";
+    },
+  },
+};
 </script>
 
 <template>
@@ -15,20 +56,69 @@ export default { components: { Button, FormInput, FormTextarea } };
       >
         Have a project in mind? Let's talk!
       </p>
-      <form action="#" class="font-general-regular space-y-7">
-        <FormInput label="Full Name" inputIdentifier="name" />
-        <FormInput label="Email" inputIdentifier="email" inputType="email" />
-        <FormInput label="Subject" inputIdentifier="subject" />
-        <FormTextarea label="Message" textareaIdentifier="message" />
+      <form @submit.prevent="handleSubmit" class="font-general-regular">
+        <label
+          class="block text-lg text-primary-dark dark:text-primary-light my-2"
+          for="name"
+          >Full Name</label
+        >
+        <input
+          class="mb-4 w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
+          id="name"
+          placeholder="Full Name"
+          v-model="name"
+          required
+        />
+        <label
+          class="block text-lg text-primary-dark dark:text-primary-light my-2"
+          for="email"
+          >Email</label
+        >
+        <input
+          class="mb-4 w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
+          id="email"
+          type="email"
+          placeholder="Email"
+          v-model="email"
+          required
+        />
+        <label
+          class="block text-lg text-primary-dark dark:text-primary-light my-2"
+          for="subject"
+          >Subject</label
+        >
+        <input
+          class="mb-4 w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
+          id="subject"
+          placeholder="Subject"
+          v-model="subject"
+          required
+        />
+        <label
+          class="block text-lg text-primary-dark dark:text-primary-light my-2"
+          for="message"
+          >Message</label
+        >
+        <textarea
+          class="mb-4 w-full px-5 py-3 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
+          id="message"
+          name="message"
+          placeholder="Message"
+          v-model="message"
+          cols="14"
+          rows="6"
+        ></textarea>
 
-        <div>
-          <Button
-            title="Send Message"
-            class="px-4 py-2.5 text-white tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
+        <div class="mb-4">
+          <button
+            class="px-4 py-3 text-white tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
             type="submit"
-            aria-label="Send Message"
-          />
+          >
+            Send Message
+          </button>
         </div>
+        <div v-if="isSuccess">Message sent successfully!</div>
+        <div v-if="isError">Error sending message: {{ error }}</div>
       </form>
     </div>
   </div>
