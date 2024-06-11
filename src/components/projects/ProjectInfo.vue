@@ -49,7 +49,7 @@ export default {
     <!-- Single project right section details -->
     <div class="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
       <p
-        class="font-general-medium text-primary-dark dark:text-primary-light text-2xl font-bold mb-7"
+        class="font-general-medium text-primary-dark dark:text-ternary-light text-2xl mb-7"
       >
         Description
       </p>

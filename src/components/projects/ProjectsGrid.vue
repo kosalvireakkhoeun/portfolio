@@ -14,7 +14,7 @@ export default {
   computed: {
     allprojects() {
       if (this.fromHome) {
-        return projects.slice(0, 4);
+        return projects.slice(0, 3);
       }
       return projects;
     },
@@ -45,7 +45,7 @@ export default {
 
     <!-- Projects grid -->
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6 sm:gap-10"
+      class="flex sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10 flex-col items-center"
     >
       <ProjectSingle
         v-for="project in allprojects"

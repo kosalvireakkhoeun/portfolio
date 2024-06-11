@@ -5,11 +5,11 @@ export default {
       bios: [
         {
           id: 1,
-          bio: "I am a highly motivated individual with a strong work ethic and a commitment to excellence. I am determined to succeed and I am always looking for new challenges to help me grow both personally and professionally. I am passionate about learning new things and I enjoy discovering new ways to solve problems.",
+          bio: "Fueled by a passion for code and a love for exploration, I'm a self-taught Full-Stack Developer with a strong foundation in Information Technology Engineering. Earning my degree from the Royal University of Phnom Penh and a 2-year Higher Diploma in Software Development at E2stem Higher Diploma honed my technical skills and problem-solving abilities.",
         },
         {
           id: 2,
-          bio: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+          bio: " I thrive on challenges and enjoy tackling projects from the ground up, evidenced by my experience in building various Web Applications. My enthusiasm for learning new technologies fuels my constant growth, and I'm always eager to contribute innovative solutions to bridge the gap between your vision and reality. Dive into my portfolio to see how I can turn your ideas into reality.",
         },
       ],
     };
@@ -37,7 +37,7 @@ export default {
       <p
         v-for="bio in bios"
         :key="bio.id"
-        class="font-general-regular mb-4 text-ternary-dark dark:text-ternary-light text-lg"
+        class="font-general-regular mb-4 text-ternary-dark dark:text-ternary-light text-sm lg:text-lg"
       >
         {{ bio.bio }}
       </p>

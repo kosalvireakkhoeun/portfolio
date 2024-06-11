@@ -7,7 +7,7 @@ export default {
 <template>
   <router-link
     :to="`/projects/${project.id}`"
-    class="hover-effect rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark w-auto h-96"
+    class="hover-effect rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark w-4/5 sm:w-full h-96"
     aria-label="Single Project"
   >
     <div class="h-2/3 flex sm:justify-center md:justify-start">
