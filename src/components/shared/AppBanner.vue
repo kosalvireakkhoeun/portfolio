@@ -6,19 +6,56 @@ export default {
   data: () => {
     return {
       theme: "",
+      wordIndex: 0,
+      charIndex: 0,
+      isDeleting: false,
+      dynamicText: {
+        textContent: "",
+        classList: "",
+      },
     };
+  },
+  methods: {
+    typeEffect() {
+      console.log("typeEffect");
+      const words = [
+        "Full-Stack Developer",
+        "Code Enthusiast",
+        "Self-taught man",
+        "Hodophile",
+      ];
+      const currentWord = words[this.wordIndex];
+      const currentChar = currentWord.substring(0, this.charIndex);
+      this.dynamicText.textContent = currentChar;
+      this.dynamicText.classList = "stop-blinking";
+
+      if (!this.isDeleting && this.charIndex < currentWord.length) {
+        this.charIndex++;
+        setTimeout(this.typeEffect, 200);
+      } else if (this.isDeleting && this.charIndex > 0) {
+        this.charIndex--;
+        setTimeout(this.typeEffect, 100);
+      } else {
+        this.isDeleting = !this.isDeleting;
+        this.dynamicText.classList = "";
+        this.wordIndex = !this.isDeleting
+          ? (this.wordIndex + 1) % words.length
+          : this.wordIndex;
+        setTimeout(this.typeEffect, 1200);
+      }
+    },
   },
   created() {
     this.theme = localStorage.getItem("theme") || "light";
   },
   mounted() {
     feather.replace();
+    this.typeEffect();
     this.theme = localStorage.getItem("theme") || "light";
   },
   updated() {
     feather.replace();
   },
-  methods: {},
 };
 </script>
 
@@ -34,16 +71,15 @@ export default {
       >
         Hi, I'm Kosalvireak
       </h1>
-      <p
+
+      <h3
         class="font-general-medium mt-3 text-lg sm:text-xl xl:text-2xl text-center sm:text-left leading-none text-gray-400"
       >
-        A Full-Stack Developer
-      </p>
-      <p
-        class="font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl text-center sm:text-left leading-none text-gray-400"
-      >
-        A Code Enthusiast
-      </p>
+        A
+        <span :class="dynamicText.classList">{{
+          dynamicText.textContent
+        }}</span>
+      </h3>
       <div class="flex justify-center sm:block">
         <a
           download="Stoman-Resume.pdf"
@@ -66,7 +102,7 @@ export default {
     <div class="w-full md:w-1/2 text-right float-right order-1 p-5">
       <img
         src="@/assets/images/cover.jpg"
-        alt="Developer"
+        alt="Kosalvireak At Bokor Moutain"
         class="rounded-xl w-auto h-auto"
       />
     </div>
@@ -74,4 +110,35 @@ export default {
 </template>
 
 <style scoped>
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 span {
+  color: #6366f1;
+  position: relative;
+}
+
+h3 span::before {
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #6366f1;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+
+h3 span.stop-blinking::before {
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 </style>
