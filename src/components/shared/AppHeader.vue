@@ -140,14 +140,6 @@ export default {
         />
       </div>
     </div>
-
-    <!-- Hire me modal -->
-    <HireMeModal
-      :showModal="showModal"
-      :modal="modal"
-      :categories="categories"
-      aria-modal="Hire Me Modal"
-    />
   </nav>
 </template>
 

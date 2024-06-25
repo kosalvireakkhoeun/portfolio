@@ -45,24 +45,65 @@ export const projectsDetail = [
             {
               id: 1,
               details:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+                "With Seavphov, users can list their pre-loved books, making them available for others to borrow at no cost. Our mission is to create an accessible library for everyone, where knowledge and stories are freely exchanged within the community.",
             },
             {
               id: 2,
               details:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
-            },
-            {
-              id: 3,
-              details:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
-            },
-            {
-              id: 4,
-              details:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
-            },
+                "Visit Github for more Images !",
+            }
           ],
+          keyFeatures: [
+            {
+              feature: "Login/Signup",
+              details: "Seamless account creation and login process to start sharing and borrowing books.",
+            },
+            {
+              feature: "Forgot Password",
+              details: "Easily recover your account with our secure password recovery system.",
+            },
+            {
+              feature: "Edit Profile",
+              details: "Personalize your profile to reflect your reading interests and preferences.",
+            },
+            {
+              feature: "Add Book",
+              details: "List your old books on Seavphov with detailed information and photos.",
+            },
+            {
+              feature: "Edit Book",
+              details: "Make changes to your book listings anytime.",
+            },
+            {
+              feature: "Delete Book",
+              details: "Remove listings that are no longer available.",
+            },
+            {
+              feature: "View Book",
+              details: "Browse detailed information about each available book.",
+            },
+            {
+              feature: "Saved Book",
+              details: "Save books you're interested in for easy access later.",
+            },
+            {
+              feature: "Notification",
+              details: "Stay updated with notifications about book availability and other important updates.",
+            },
+            {
+              feature: "Search + Filter",
+              details: "Find the perfect book using our advanced search and filter options.",
+            },
+            {
+              feature: "Add/Edit/Delete/View Banner",
+              details: "Manage promotional banners to highlight special announcements or featured books.",
+            },
+            {
+              feature: "Set Banner",
+              details: "Customize the banner display to engage users with the latest updates and promotions.",
+            },
+          ]
+          
         },
         relatedProject: {
           relatedProjectsHeading: "Related Projects",

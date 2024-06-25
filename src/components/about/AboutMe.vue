@@ -9,7 +9,7 @@ export default {
         },
         {
           id: 2,
-          bio: " I thrive on challenges and enjoy tackling projects from the ground up, evidenced by my experience in building various Web Applications. My enthusiasm for learning new technologies fuels my constant growth, and I'm always eager to contribute innovative solutions to bridge the gap between your vision and reality. Dive into my portfolio to see how I can turn your ideas into reality.",
+          bio: "I thrive on challenges and enjoy tackling projects from the ground up, evidenced by my experience in building various Web Applications. My enthusiasm for learning new technologies fuels my constant growth, and I'm always eager to contribute innovative solutions to bridge the gap between your vision and reality. Dive into my portfolio to see how I can turn your ideas into reality.",
         },
       ],
     };
@@ -37,7 +37,7 @@ export default {
       <p
         v-for="bio in bios"
         :key="bio.id"
-        class="font-general-regular mb-4 text-ternary-dark dark:text-ternary-light text-sm lg:text-lg"
+        class="font-general-regular mb-4 text-ternary-dark dark:text-ternary-light text-lg md:text-md lg:text-lg"
       >
         {{ bio.bio }}
       </p>

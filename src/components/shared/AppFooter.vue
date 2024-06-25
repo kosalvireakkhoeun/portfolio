@@ -25,11 +25,11 @@ export default {
       <!-- Footer social links -->
       <div class="flex flex-col justify-center items-center mb-10">
         <p
-          class="font-general-semibold text-3xl sm:text-4xl font-semibold text-primary-dark dark:text-primary-light mb-5"
+          class="font-general-semibold text-3xl sm:text-4xl font-semibold text-primary-dark dark:text-primary-light mb-10"
         >
           Follow me
         </p>
-        <ul class="flex gap-4 sm:gap-8">
+        <ul class="flex gap-4 sm:gap-8 mb-5">
           <a
             v-for="social in socials"
             :key="social.id"
