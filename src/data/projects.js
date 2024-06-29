@@ -22,9 +22,9 @@ const projects = [
 	},
 	{
 		id: 4,
-		title: 'Campgrounds Listing',
+		title: 'Campsite Listing',
 		category: 'Web Application',
-		img: require('@/assets/images/projects/seavphov.png'),
+		img: require('@/assets/images/projects/camp.png'),
 	},
 	{
 		id: 5,

@@ -130,7 +130,8 @@ export default {
 
       <!-- Header right section buttons -->
       <div
-        class="hidden sm:flex justify-between items-center flex-col md:flex-row"
+        class="hidden sm:flex justify-end items-center flex-col md:flex-row"
+        style="width: 100px"
       >
         <!-- Theme switcher large screen -->
         <theme-switcher

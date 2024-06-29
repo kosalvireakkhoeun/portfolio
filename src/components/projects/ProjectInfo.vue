@@ -58,7 +58,14 @@ export default {
         :key="projectDetail.id"
         class="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
       >
-        {{ projectDetail.details }}
+        <span v-if="!projectDetail.url">{{ projectDetail.details }}</span>
+        <a
+          v-else
+          :href="projectDetail.details"
+          class="underline"
+          target="__blank"
+          >{{ projectDetail.details }}</a
+        >
       </p>
       <p
         class="font-general-medium text-primary-dark dark:text-ternary-light text-xl mb-5"
