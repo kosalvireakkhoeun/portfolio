@@ -24,13 +24,13 @@ const projects = [
 		id: 4,
 		title: 'Plot Graph Admin',
 		category: 'Mobile Application',
-		img: require('@/assets/images/projects/seavphov.png'),
+		img: require('@/assets/images/na.png'),
 	},
 	{
 		id: 5,
 		title: 'LED Mote',
 		category: 'IOT + Web Application',
-		img: require('@/assets/images/projects/seavphov.png'),
+		img: require('@/assets/images/na.png'),
 	}
 ];
 

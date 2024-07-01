@@ -313,18 +313,18 @@ export const projectsDetail = [
         projectImages: [
           {
             id: 1,
-            title: "Plot Graph",
-            img: require("@/assets/images/projects/seavphov.png"),
+            title: "Plot Graph Admin",
+            img: require("@/assets/images/projects/biadmin.png"),
           },
           {
             id: 2,
-            title: "Plot Graph",
-            img: require("@/assets/images/projects/seavphov.png"),
+            title: "Plot Graph Admin",
+            img: require("@/assets/images/projects/biadmin1.png"),
           },
           {
             id: 3,
-            title: "Plot Graph",
-            img: require("@/assets/images/projects/seavphov.png"),
+            title: "Plot Graph Admin",
+            img: require("@/assets/images/projects/biadmin2.png"),
           },
         ],
         projectInfo: {
@@ -343,62 +343,30 @@ export const projectsDetail = [
             {
               id: 1,
               details:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+                "This mobile app empowers Plot Graph administrators with user management functionalities. Admins can create new user accounts, reset existing user passwords, and gain comprehensive insights into user data, including total user count, email addresses, profile image, and usernames.",
             },
             {
               id: 2,
               details:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
-            }
+                "Administrative privileges are required to access and perform these functions.",
+            },
           ],
           keyFeatures: [
             {
-              feature: "Login/Signup",
-              details: "Seamless account creation and login process to start sharing and borrowing books.",
+              feature: "Signup",
+              details: "Accept only Administrative user",
             },
             {
-              feature: "Forgot Password",
-              details: "Easily recover your account with our secure password recovery system.",
+              feature: "Reset Password",
+              details: "Admin is able to reset user's password",
             },
             {
-              feature: "Edit Profile",
-              details: "Personalize your profile to reflect your reading interests and preferences.",
+              feature: "Send Reset password email",
+              details: "After admin reset password.Email will be sent directly to the user.",
             },
             {
-              feature: "Add Book",
-              details: "List your old books on Seavphov with detailed information and photos.",
-            },
-            {
-              feature: "Edit Book",
-              details: "Make changes to your book listings anytime.",
-            },
-            {
-              feature: "Delete Book",
-              details: "Remove listings that are no longer available.",
-            },
-            {
-              feature: "View Book",
-              details: "Browse detailed information about each available book.",
-            },
-            {
-              feature: "Saved Book",
-              details: "Save books you're interested in for easy access later.",
-            },
-            {
-              feature: "Notification",
-              details: "Stay updated with notifications about book availability and other important updates.",
-            },
-            {
-              feature: "Search + Filter",
-              details: "Find the perfect book using our advanced search and filter options.",
-            },
-            {
-              feature: "Add/Edit/Delete/View Banner",
-              details: "Manage promotional banners to highlight special announcements or featured books.",
-            },
-            {
-              feature: "Set Banner",
-              details: "Customize the banner display to engage users with the latest updates and promotions.",
+              feature: "Monitor all the users",
+              details: "See all user inside the application.",
             },
           ]
         }
@@ -414,17 +382,17 @@ export const projectsDetail = [
           {
             id: 1,
             title: "Plot Graph",
-            img: require("@/assets/images/projects/bi.png"),
+            img: require("@/assets/images/na.png"),
           },
           {
             id: 2,
             title: "Plot Graph",
-            img: require("@/assets/images/projects/bi1.png"),
+            img: require("@/assets/images/na.png"),
           },
           {
             id: 3,
             title: "Plot Graph",
-            img: require("@/assets/images/projects/bi.png"),
+            img: require("@/assets/images/na.png"),
           },
         ],
         projectInfo: {
