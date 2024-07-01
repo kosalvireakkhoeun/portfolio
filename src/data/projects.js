@@ -16,15 +16,15 @@ const projects = [
 	},
 	{
 		id: 3,
-		title: 'Plot Graph Admin',
-		category: 'Mobile Application',
-		img: require('@/assets/images/projects/seavphov.png'),
-	},
-	{
-		id: 4,
 		title: 'Campsite Listing',
 		category: 'Web Application',
 		img: require('@/assets/images/projects/camp.png'),
+	},
+	{
+		id: 4,
+		title: 'Plot Graph Admin',
+		category: 'Mobile Application',
+		img: require('@/assets/images/projects/seavphov.png'),
 	},
 	{
 		id: 5,

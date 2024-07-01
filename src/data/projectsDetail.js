@@ -213,6 +213,98 @@ export const projectsDetail = [
       },
       {
         singleProjectHeader: {
+          singleProjectTitle: "Campsite Listing",
+          singleProjectDate: "Apr, 2023",
+          github: false,
+          url: "https://yelpcamp-arwf.onrender.com/",
+        },
+        projectImages: [
+          {
+            id: 1,
+            title: "Campsite Listing",
+            img: require("@/assets/images/projects/camp1.png"),
+          },
+          {
+            id: 2,
+            title: "Campsite Listing",
+            img: require("@/assets/images/projects/camp2.png"),
+          },
+          {
+            id: 3,
+            title: "Campsite Listing",
+            img: require("@/assets/images/projects/camp3.png"),
+          },
+        ],
+        projectInfo: {
+          objectivesDetails:
+            "Post your favorite campsites and leave reviews for others.",
+          technologies: [
+            {
+              techs: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap",
+                "Node",
+                "Express",
+                "MongoDB",
+                "MapBox",
+                "Cloudinary"
+              ],
+            },
+          ],
+          projectDetails: [
+            {
+              id: 1,
+              details:
+                "The project draws upon the curriculum of 'The Web Developer Bootcamp 2023' on Udemy.",
+            },
+            {
+              id: 3,
+              details:
+                "https://i.postimg.cc/mrMsYyR2/Khoeun-kosalvireak-certificate-Bootcamp.jpg",
+              url: true,
+            },
+            {
+              id:4,
+              details:
+              "Campsite Explorer is built for all types of campers. Registered or not, you can contribute to the community by leaving star ratings and detailed reviews to help others find their ideal escape. Plus, browse the campsite listings completely anonymously – no registration required!"
+            }
+          ],
+          keyFeatures: [
+            {
+              feature: "Login/Register",
+              details: "Simple account creation with just username and password."
+            },
+            {
+              feature: "Add Campsite",
+              details: "List your visited campsite with build-in location pic on map.",
+            },
+            {
+              feature: "Edit Campsite",
+              details: "Make changes to your campsite listings anytime.",
+            },
+            {
+              feature: "Delete Campsite",
+              details: "Remove listings that are no longer available.",
+            },
+            {
+              feature: "View Campsite",
+              details: "Browse detailed information about each available campsite.",
+            },
+            {
+              feature: "Cluster View",
+              details: "Listed all the campsites in a single map.",
+            },
+            {
+              feature: "Rate & Review",
+              details: "Shape the camping community by leaving star ratings and detailed reviews on campsites you've experienced. Help fellow adventurers find their perfect escape!"
+            },
+          ]
+        }
+      },
+      {
+        singleProjectHeader: {
           singleProjectTitle: "Plot Graph Admin",
           singleProjectDate: "Dec, 2023",
           github: true,
@@ -307,93 +399,6 @@ export const projectsDetail = [
             {
               feature: "Set Banner",
               details: "Customize the banner display to engage users with the latest updates and promotions.",
-            },
-          ]
-        }
-      },
-      {
-        singleProjectHeader: {
-          singleProjectTitle: "Campsite Listing",
-          singleProjectDate: "May, 2023",
-          github: false,
-          url: "https://yelpcamp-arwf.onrender.com/",
-        },
-        projectImages: [
-          {
-            id: 1,
-            title: "Campsite Listing",
-            img: require("@/assets/images/projects/camp1.png"),
-          },
-          {
-            id: 2,
-            title: "Campsite Listing",
-            img: require("@/assets/images/projects/camp2.png"),
-          },
-          {
-            id: 3,
-            title: "Campsite Listing",
-            img: require("@/assets/images/projects/camp3.png"),
-          },
-        ],
-        projectInfo: {
-          objectivesDetails:
-            "Post your favorite campsites and leave reviews for others.",
-          technologies: [
-            {
-              techs: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Bootstrap",
-                "Node",
-                "Express",
-                "MongoDB",
-                "MapBox",
-                "Cloudinary"
-              ],
-            },
-          ],
-          projectDetails: [
-            {
-              id: 1,
-              details:
-                "Craving a campfire under the stars but overwhelmed by campsite options? Campsite Explorer is your one-stop shop for discovering the perfect escape! Explore a comprehensive list of campsites, each complete with location pins on an interactive map, captivating pictures, and detailed descriptions. Whether you're on a budget or seeking a luxurious experience, some listings even include pricing (available only for registered users who list campsites).",
-            },
-            {
-              id: 2,
-              details:
-                "Feeling adventurous yourself? Share your hidden gems with the community! Register to list campsites you've visited, including location details, pricing (optional), pictures, and descriptions. Already listed a site? No problem! Keep your information up-to-date with easy editing and deletion options.",
-            },
-            {
-              id:3,
-              details:
-              "Campsite Explorer is built for all types of campers. Registered or not, you can contribute to the community by leaving star ratings and detailed reviews to help others find their ideal escape. Plus, browse the campsite listings completely anonymously – no registration required!"
-            }
-          ],
-          keyFeatures: [
-            {
-              feature: "Login/Register",
-              details: "Simple account creation with just username and password."
-            },
-            {
-              feature: "Add Campsite",
-              details: "List your visited campsite with build-in location pic on map.",
-            },
-            {
-              feature: "Edit Campsite",
-              details: "Make changes to your campsite listings anytime.",
-            },
-            {
-              feature: "Delete Campsite",
-              details: "Remove listings that are no longer available.",
-            },
-            {
-              feature: "View Campsite",
-              details: "Browse detailed information about each available campsite.",
-            },
-            {
-              feature: "Rate & Review",
-              details: "Shape the camping community by leaving star ratings and detailed reviews on campsites you've experienced. Help fellow adventurers find their perfect escape!"
             },
           ]
         }
