@@ -1,6 +1,6 @@
 <script>
 import feather from "feather-icons";
-import typingWords from "../../data/typingWords";
+import words from "../../data/typingWords";
 export default {
   name: "Home",
   data: () => {
@@ -17,7 +17,6 @@ export default {
   },
   methods: {
     typeEffect() {
-      const words = typingWords;
       const currentWord = words[this.wordIndex];
       const currentChar = currentWord.substring(0, this.charIndex);
       this.dynamicText.textContent = currentChar;
